@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: __local_jars__:F.\test3d\CheerChatUnity\libs\unity-classes.jar:unspecified">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/unity-classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
