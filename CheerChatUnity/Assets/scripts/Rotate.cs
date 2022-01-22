@@ -21,9 +21,12 @@ public class Rotate : MonoBehaviour
         //单点触摸， 水平旋转  
         if (1 == Input.touchCount)
         {
+            //Touch touch = Input.GetTouch(0);
+            //Vector3 deltaPos = touch.deltaPosition;
+            //transform.Rotate(Vector3.up * deltaPos.y * 10, Space.World);
             Touch touch = Input.GetTouch(0);
-            Vector3 deltaPos = touch.deltaPosition;
-            transform.Rotate(Vector3.up * deltaPos.y * 10, Space.World);
+            Vector2 deltaPos = touch.deltaPosition;
+            transform.Rotate(new Vector3(0, 1, 0) * (-deltaPos.x), Space.World);
         }
 
     }
